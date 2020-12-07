@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			img{
+				width: 25rem;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+				/**
+				 * 滤镜属性 -webkit-filter 1:百分之百 0:百分之0
+				 grayscale 灰度
+				 brightness 亮度 默认值1,正常亮度
+				 sepia: 1百分之百褐色 正常为0
+				 blur :模糊度: 单位像素
+				 contrast:对比度,正常是1 如果调成0,没有任何对比度,变为灰色
+				 saturate:饱和度 正常是1
+				 invert: 胶片底色
+				 hue-rotate: 色相旋转 360deg正常
+				 */
+				-webkit-filter: grayscale(1);
+				/* 过度效果,3s */
+				transition: all 3s;
+			}
+			img:hover{
+				-webkit-filter: none;
+			}
+			
+			.img1{
+				-webkit-filter: grayscale(1);
+			}
+			.img2{
+				-webkit-filter: brightness(2);
+			}
+			.img3{
+				-webkit-filter: sepia(1);
+			}
+			.img4{
+				-webkit-filter: blur(5px);
+			}
+			.img5{
+				-webkit-filter: contrast(5);
+			}
+			.img6{
+				-webkit-filter: saturate(2);
+			}
+			.img7{
+				-webkit-filter: invert(1);
+			}
+			.img8{
+				-webkit-filter: hue-rotate(280deg);
+			}
+			.img9{
+				/* 一点点画出来 */
+				-webkit-filter: brightness(10) grayscale(1);
+				transition: all 5s;
+			}
+		
+			
+			
+		</style>
+	</head>
+	<body>
+		<img class="img1" src="./img/timg.jpg" >
+		<img class="img2" src="./img/timg.jpg" >
+		<img class="img3" src="./img/timg.jpg" >
+		<img class="img4" src="./img/timg.jpg" >
+		<img class="img5" src="./img/timg.jpg" >
+		<img class="img6" src="./img/timg.jpg" >
+		<img class="img7" src="./img/timg.jpg" >
+		<img class="img8" src="./img/timg.jpg" >
+		<img class="img9" src="./img/timg.jpg" >
+	</body>
+</html>
